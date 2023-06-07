@@ -13,7 +13,7 @@ Ce README fournit des instructions pour configurer et utiliser l'API du blog . L
 2. Accédez au répertoire du projet :
 
    ```bash
-   cd blog-api
+   cd Blog-api
    ```
 
 3. Installez les dépendances npm :
