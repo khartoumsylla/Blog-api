@@ -51,6 +51,7 @@ Ce README fournit des instructions pour configurer et utiliser l'API du blog . L
 L'API du blog expose les endpoints suivants :
 
 - `GET /article` : Récupère la liste des articles.
+- `POST /article` : Ajoute un article.
 - `GET /article/:id` : Récupère un article spécifique en fonction de son ID.
 - `PUT /article/:id` : Modifie un article spécifique en fonction de son ID.
 - `DELETE /article/:id` : Supprime un article spécifique en fonction de son ID.
