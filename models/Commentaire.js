@@ -28,7 +28,7 @@ class Commentaire {
 
     static allAuteur(author) {
         return new Promise((resolve, reject) => {
-            db.all('SELECT * FROM commentaires WHERE auteur =', 
+            db.all('SELECT * FROM commentaires WHERE auteur = ?', 
             author,
             (err, rows) => {
                 if (err)
