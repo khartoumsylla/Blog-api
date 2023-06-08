@@ -44,7 +44,7 @@ Ce README fournit des instructions pour configurer et utiliser l'API du blog . L
 
    L'API sera accessible à l'adresse `http://localhost:3000`.
 
-2. Vous pouvez utiliser mon liens [Postman](https://www.postman.com/downloads/) pour interagir avec l'API. Importez la collection Postman fournie dans le répertoire `postman` pour obtenir tous les endpoints et leurs détails.
+2. Vous pouvez utiliser mon liens [Postman]([https://www.postman.com/downloads/](https://app.getpostman.com/join-team?invite_code=f81473028c1b55f469f3cddc1a5f2cb2&target_code=3593a5ead6e43790b897cb87cfb8055e)) pour interagir avec l'API. Importez la collection Postman fournie dans le répertoire `postman` pour obtenir tous les endpoints et leurs détails.
 
 ## Endpoints
 
