@@ -27,7 +27,23 @@ class Article {
         this.commentaires = await Commentaire.allArticle(this.id)
     }
 
-   
+    create() {
+        db.run(
+            "INSERT INTO articles(titre, content, date_created, date_updated, visible) VALUES (?, ?, ?, ?, ?)",
+            this.titre,
+            this.content,
+            this.date_created,
+            this.date_updated,
+            this.visible,
+            (err) => {
+                if (err) {
+                    console.error("Erreur lors de l'insertion de l'article :", err.message);
+                } else {
+                    console.log("Article inséré avec succès !");
+                }
+            }
+        );
+    }
 
    
     static all() {
@@ -72,23 +88,7 @@ class Article {
     }
   
     
-    create() {
-        db.run(
-            "INSERT INTO articles(titre, content, date_created, date_updated, visible) VALUES (?, ?, ?, ?, ?)",
-            this.titre,
-            this.content,
-            this.date_created,
-            this.date_updated,
-            this.visible,
-            (err) => {
-                if (err) {
-                    console.error("Erreur lors de l'insertion de l'article :", err.message);
-                } else {
-                    console.log("Article inséré avec succès !");
-                }
-            }
-        );
-    }
+
     
     update(id) {
         return new Promise((resolve, reject) => {
