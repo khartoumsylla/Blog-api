@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 // Routers
 app.use('/article', require('./routes/article'))
-
+app.use('/author', require('./routes/author'))
 
 // Démarrage du serveur
 app.listen(port, () => {
