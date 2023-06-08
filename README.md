@@ -56,7 +56,7 @@ L'API du blog expose les endpoints suivants :
 - `PUT /article/:id` : Modifie un article spécifique en fonction de son ID.
 - `DELETE /article/:id` : Supprime un article spécifique en fonction de son ID.
 - `GET /article/:id/commentaire` : Récupère les commentaires d'un article spécifique en fonction de son ID.
-- `GET /author/commentaire?auteur=:auteur` : Récupère les commentaires d'un auteur spécifique.
+- `GET /author/:auteur/commentaire` : Récupère les commentaires d'un auteur spécifique.
 - `POST /article/:id/commentaire` : Ajoute un commentaire à un article spécifique en fonction de son ID.
 - `PUT /article/:id/commentaire` : Modifie un commentaire spécifique en fonction de son ID.
 - `DELETE /article/:id/commentaire` : Supprime un commentaire spécifique en fonction de son ID.
