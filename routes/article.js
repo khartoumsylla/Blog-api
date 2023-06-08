@@ -13,8 +13,25 @@ router.route('/')
     // Récupération de la liste des utilisateurs
     .get(async (req, res) => {
         const result = await Article.all()
-        console.log(result)
         res.send(result)
+    })
+
+    .post
+    (async(req, res) => {
+    // Création d'une instance de user
+    const new_article = new Article(req.body)
+    try {
+        // Création en base de données via le model
+        await new_article.create()
+
+        // Réponse
+        res.status(201).json(`L article  ${new_article.titre} à été ajouté`)
+    }
+    catch (err) {
+        console.error('Erreur dans la route', err)
+
+        res.status(500).json('Erreur serveur, Echec de l\'ajout')
+    }
     })
 
 // Route /article/[id]
