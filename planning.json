@@ -1,0 +1,49 @@
+{
+  "projet": "Nom du projet",
+  "dateDebut": "2023-07-01",
+  "dateFin": "2023-07-31",
+  "taches": [
+    {
+      "id": 1,
+      "nom": "Conception de l'architecture",
+      "debut": "2023-07-01",
+      "fin": "2023-07-05",
+      "responsable": "John Doe"
+    },
+    {
+      "id": 2,
+      "nom": "Développement des fonctionnalités",
+      "debut": "2023-07-06",
+      "fin": "2023-07-15",
+      "responsable": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "nom": "Tests et corrections",
+      "debut": "2023-07-16",
+      "fin": "2023-07-21",
+      "responsable": "David Johnson"
+    },
+    {
+      "id": 4,
+      "nom": "Déploiement de l'application",
+      "debut": "2023-07-22",
+      "fin": "2023-07-25",
+      "responsable": "Emily Wilson"
+    },
+    {
+      "id": 5,
+      "nom": "Formation du personnel",
+      "debut": "2023-07-26",
+      "fin": "2023-07-28",
+      "responsable": "Michael Brown"
+    },
+    {
+      "id": 6,
+      "nom": "Lancement du projet",
+      "debut": "2023-07-29",
+      "fin": "2023-07-31",
+      "responsable": "Sarah Davis"
+    }
+  ]
+}
